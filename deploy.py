@@ -36,7 +36,7 @@ class ThreeTierAppStack(core.Stack):
         # Create Amplify frontend
         amplify_app = CfnApp(self, 'MyAmplifyApp',
                              name='my-test-amplify-app',
-                             repository='https://github.com/my/repo.git',  # Provide your frontend repository URL
+                             repository='https://github.com/my/repo.git',  
                              build_spec='build.yml')  
 
 app = core.App()
