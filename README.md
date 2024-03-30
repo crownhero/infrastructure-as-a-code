@@ -1,7 +1,21 @@
-The deploy.py file contains aws cdk to deploy a 3-tier application. using aws amplify to host the frontend, an ec2 instance for the backend and aws rds using mysql as the engine.
+Deploy.py for 3-Tier Application Deployment
 
-Setup environment: ensure you have the necessary Python dependencies installed. If not, you can install them using pip: 
+Overview:
+The deploy.py script contains AWS CDK code to facilitate the deployment of a 3-tier application. This application comprises an Amplify frontend, an EC2 instance serving as the backend, and an AWS RDS MySQL database.
+
+Setup Environment:
+Before proceeding with deployment, ensure that the required Python dependencies are installed. If not, use pip to install them:
 
 pip install aws-cdk.core aws-cdk.aws-amplify aws-cdk.aws-ec2 aws-cdk.aws-rds
 
-To deploy the application run: cdk deploy, this command will create a VPC, RDS MySQL database, EC2 instance for the backend, and an Amplify frontend linked to your GitHub repository
+Deployment Process:
+To initiate the deployment process, execute the following command:
+
+cdk deploy
+
+This command automates the creation of the following components:
+
+Virtual Private Cloud (VPC): Hosting environment for the application's components.
+AWS RDS MySQL Database: Storage for application data.
+EC2 Instance: Backend logic implementation.
+Amplify Frontend: Linked to the specified GitHub repository.
